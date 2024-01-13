@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,50 @@
 		237E11A32B523EBF0094DB85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E11A22B523EBF0094DB85 /* ContentView.swift */; };
 		237E11A52B523EC20094DB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237E11A42B523EC20094DB85 /* Assets.xcassets */; };
 		237E11A82B523EC20094DB85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237E11A72B523EC20094DB85 /* Preview Assets.xcassets */; };
+		237E11AF2B523F7C0094DB85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */; };
+		237E11B22B5241400094DB85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11B12B5241400094DB85 /* FirebaseAnalytics */; };
+		237E11BE2B5241400094DB85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11BD2B5241400094DB85 /* FirebaseAuth */; };
+		237E11CA2B5241400094DB85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11C92B5241400094DB85 /* FirebaseFirestore */; };
+		237E12682B5249040094DB85 /* UnderlineTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E125A2B5249040094DB85 /* UnderlineTextFieldStyle.swift */; };
+		237E12692B5249040094DB85 /* RoundedCardStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E125B2B5249040094DB85 /* RoundedCardStyle.swift */; };
+		237E126A2B5249040094DB85 /* SectionHeaderFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E125C2B5249040094DB85 /* SectionHeaderFontStyle.swift */; };
+		237E126B2B5249040094DB85 /* RoundedOutlineContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E125D2B5249040094DB85 /* RoundedOutlineContainer.swift */; };
+		237E13762B524F9D0094DB85 /* Holding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E134A2B524F9D0094DB85 /* Holding.swift */; };
+		237E13772B524F9D0094DB85 /* PortfolioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E134B2B524F9D0094DB85 /* PortfolioManager.swift */; };
+		237E13782B524F9D0094DB85 /* UserPortfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E134C2B524F9D0094DB85 /* UserPortfolio.swift */; };
+		237E13792B524F9D0094DB85 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E134E2B524F9D0094DB85 /* MenuBar.swift */; };
+		237E137A2B524F9D0094DB85 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E134F2B524F9D0094DB85 /* PrimaryButton.swift */; };
+		237E137B2B524F9D0094DB85 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13502B524F9D0094DB85 /* SecondaryButton.swift */; };
+		237E137C2B524F9D0094DB85 /* SortSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13512B524F9D0094DB85 /* SortSelection.swift */; };
+		237E137D2B524F9D0094DB85 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13522B524F9D0094DB85 /* FavoriteButton.swift */; };
+		237E137E2B524F9D0094DB85 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13542B524F9D0094DB85 /* APIService.swift */; };
+		237E137F2B524F9D0094DB85 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13552B524F9D0094DB85 /* Extension.swift */; };
+		237E13802B524F9D0094DB85 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13562B524F9D0094DB85 /* FirebaseAuthService.swift */; };
+		237E13812B524F9E0094DB85 /* CoinListOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13572B524F9D0094DB85 /* CoinListOperation.swift */; };
+		237E13822B524F9E0094DB85 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13592B524F9D0094DB85 /* LoginView.swift */; };
+		237E13832B524F9E0094DB85 /* ResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E135A2B524F9D0094DB85 /* ResetView.swift */; };
+		237E13842B524F9E0094DB85 /* TransitionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E135B2B524F9D0094DB85 /* TransitionView.swift */; };
+		237E13852B524F9E0094DB85 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E135C2B524F9D0094DB85 /* SignUpView.swift */; };
+		237E13862B524F9E0094DB85 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E135E2B524F9D0094DB85 /* UserProfile.swift */; };
+		237E13872B524F9E0094DB85 /* FavoriteCoin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E135F2B524F9D0094DB85 /* FavoriteCoin.swift */; };
+		237E13882B524F9E0094DB85 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13622B524F9D0094DB85 /* CoinManager.swift */; };
+		237E13892B524F9E0094DB85 /* CoinDetailManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13632B524F9D0094DB85 /* CoinDetailManager.swift */; };
+		237E138A2B524F9E0094DB85 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13652B524F9D0094DB85 /* Coin.swift */; };
+		237E138B2B524F9E0094DB85 /* CoinDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13662B524F9D0094DB85 /* CoinDetail.swift */; };
+		237E138C2B524F9E0094DB85 /* CoinList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13682B524F9D0094DB85 /* CoinList.swift */; };
+		237E138D2B524F9E0094DB85 /* CoinScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13692B524F9D0094DB85 /* CoinScroll.swift */; };
+		237E138E2B524F9E0094DB85 /* CoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E136A2B524F9D0094DB85 /* CoinRow.swift */; };
+		237E138F2B524F9E0094DB85 /* CoinCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E136B2B524F9D0094DB85 /* CoinCard.swift */; };
+		237E13902B524F9E0094DB85 /* MyHolding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E136D2B524F9D0094DB85 /* MyHolding.swift */; };
+		237E13912B524F9E0094DB85 /* UserCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E136E2B524F9D0094DB85 /* UserCard.swift */; };
+		237E13922B524F9E0094DB85 /* CoinPriceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E136F2B524F9D0094DB85 /* CoinPriceChart.swift */; };
+		237E13932B524F9E0094DB85 /* TradePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13702B524F9D0094DB85 /* TradePage.swift */; };
+		237E13942B524F9E0094DB85 /* HomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13712B524F9D0094DB85 /* HomeTabView.swift */; };
+		237E13952B524F9E0094DB85 /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13722B524F9D0094DB85 /* CoinDetailView.swift */; };
+		237E13962B524F9E0094DB85 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13732B524F9D0094DB85 /* MarketView.swift */; };
+		237E13972B524F9E0094DB85 /* WatchlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13742B524F9D0094DB85 /* WatchlistView.swift */; };
+		237E13982B524F9E0094DB85 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E13752B524F9D0094DB85 /* PortfolioView.swift */; };
+		237E139B2B52517E0094DB85 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 237E139A2B52517E0094DB85 /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +63,46 @@
 		237E11A22B523EBF0094DB85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		237E11A42B523EC20094DB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237E11A72B523EC20094DB85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		237E125A2B5249040094DB85 /* UnderlineTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldStyle.swift; sourceTree = "<group>"; };
+		237E125B2B5249040094DB85 /* RoundedCardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCardStyle.swift; sourceTree = "<group>"; };
+		237E125C2B5249040094DB85 /* SectionHeaderFontStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderFontStyle.swift; sourceTree = "<group>"; };
+		237E125D2B5249040094DB85 /* RoundedOutlineContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedOutlineContainer.swift; sourceTree = "<group>"; };
+		237E134A2B524F9D0094DB85 /* Holding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Holding.swift; sourceTree = "<group>"; };
+		237E134B2B524F9D0094DB85 /* PortfolioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioManager.swift; sourceTree = "<group>"; };
+		237E134C2B524F9D0094DB85 /* UserPortfolio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPortfolio.swift; sourceTree = "<group>"; };
+		237E134E2B524F9D0094DB85 /* MenuBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		237E134F2B524F9D0094DB85 /* PrimaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
+		237E13502B524F9D0094DB85 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		237E13512B524F9D0094DB85 /* SortSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortSelection.swift; sourceTree = "<group>"; };
+		237E13522B524F9D0094DB85 /* FavoriteButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		237E13542B524F9D0094DB85 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		237E13552B524F9D0094DB85 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		237E13562B524F9D0094DB85 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
+		237E13572B524F9D0094DB85 /* CoinListOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListOperation.swift; sourceTree = "<group>"; };
+		237E13592B524F9D0094DB85 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		237E135A2B524F9D0094DB85 /* ResetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetView.swift; sourceTree = "<group>"; };
+		237E135B2B524F9D0094DB85 /* TransitionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionView.swift; sourceTree = "<group>"; };
+		237E135C2B524F9D0094DB85 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		237E135E2B524F9D0094DB85 /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		237E135F2B524F9D0094DB85 /* FavoriteCoin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCoin.swift; sourceTree = "<group>"; };
+		237E13622B524F9D0094DB85 /* CoinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		237E13632B524F9D0094DB85 /* CoinDetailManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailManager.swift; sourceTree = "<group>"; };
+		237E13652B524F9D0094DB85 /* Coin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		237E13662B524F9D0094DB85 /* CoinDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetail.swift; sourceTree = "<group>"; };
+		237E13682B524F9D0094DB85 /* CoinList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinList.swift; sourceTree = "<group>"; };
+		237E13692B524F9D0094DB85 /* CoinScroll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinScroll.swift; sourceTree = "<group>"; };
+		237E136A2B524F9D0094DB85 /* CoinRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinRow.swift; sourceTree = "<group>"; };
+		237E136B2B524F9D0094DB85 /* CoinCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinCard.swift; sourceTree = "<group>"; };
+		237E136D2B524F9D0094DB85 /* MyHolding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHolding.swift; sourceTree = "<group>"; };
+		237E136E2B524F9D0094DB85 /* UserCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCard.swift; sourceTree = "<group>"; };
+		237E136F2B524F9D0094DB85 /* CoinPriceChart.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinPriceChart.swift; sourceTree = "<group>"; };
+		237E13702B524F9D0094DB85 /* TradePage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TradePage.swift; sourceTree = "<group>"; };
+		237E13712B524F9D0094DB85 /* HomeTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabView.swift; sourceTree = "<group>"; };
+		237E13722B524F9D0094DB85 /* CoinDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
+		237E13732B524F9D0094DB85 /* MarketView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		237E13742B524F9D0094DB85 /* WatchlistView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchlistView.swift; sourceTree = "<group>"; };
+		237E13752B524F9D0094DB85 /* PortfolioView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237E11CA2B5241400094DB85 /* FirebaseFirestore in Frameworks */,
+				237E11B22B5241400094DB85 /* FirebaseAnalytics in Frameworks */,
+				237E11BE2B5241400094DB85 /* FirebaseAuth in Frameworks */,
+				237E139B2B52517E0094DB85 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +125,7 @@
 			children = (
 				237E119F2B523EBF0094DB85 /* CryptoWallet */,
 				237E119E2B523EBF0094DB85 /* Products */,
+				237E13992B52517E0094DB85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,7 +142,16 @@
 			children = (
 				237E11A02B523EBF0094DB85 /* CryptoWalletApp.swift */,
 				237E11A22B523EBF0094DB85 /* ContentView.swift */,
+				237E13582B524F9D0094DB85 /* Login */,
+				237E136C2B524F9D0094DB85 /* Tab */,
+				237E13602B524F9D0094DB85 /* Coin */,
+				237E13492B524F9D0094DB85 /* RemoteStorage */,
+				237E135D2B524F9D0094DB85 /* LocalStorage */,
+				237E134D2B524F9D0094DB85 /* Component */,
+				237E13532B524F9D0094DB85 /* Helper */,
+				237E12592B5249040094DB85 /* Style */,
 				237E11A42B523EC20094DB85 /* Assets.xcassets */,
+				237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */,
 				237E11A62B523EC20094DB85 /* Preview Content */,
 			);
 			path = CryptoWallet;
@@ -65,6 +163,132 @@
 				237E11A72B523EC20094DB85 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		237E12592B5249040094DB85 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				237E125A2B5249040094DB85 /* UnderlineTextFieldStyle.swift */,
+				237E125B2B5249040094DB85 /* RoundedCardStyle.swift */,
+				237E125C2B5249040094DB85 /* SectionHeaderFontStyle.swift */,
+				237E125D2B5249040094DB85 /* RoundedOutlineContainer.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		237E13492B524F9D0094DB85 /* RemoteStorage */ = {
+			isa = PBXGroup;
+			children = (
+				237E134A2B524F9D0094DB85 /* Holding.swift */,
+				237E134B2B524F9D0094DB85 /* PortfolioManager.swift */,
+				237E134C2B524F9D0094DB85 /* UserPortfolio.swift */,
+			);
+			path = RemoteStorage;
+			sourceTree = "<group>";
+		};
+		237E134D2B524F9D0094DB85 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				237E134E2B524F9D0094DB85 /* MenuBar.swift */,
+				237E134F2B524F9D0094DB85 /* PrimaryButton.swift */,
+				237E13502B524F9D0094DB85 /* SecondaryButton.swift */,
+				237E13512B524F9D0094DB85 /* SortSelection.swift */,
+				237E13522B524F9D0094DB85 /* FavoriteButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		237E13532B524F9D0094DB85 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				237E13562B524F9D0094DB85 /* FirebaseAuthService.swift */,
+				237E13542B524F9D0094DB85 /* APIService.swift */,
+				237E13572B524F9D0094DB85 /* CoinListOperation.swift */,
+				237E13552B524F9D0094DB85 /* Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		237E13582B524F9D0094DB85 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				237E13592B524F9D0094DB85 /* LoginView.swift */,
+				237E135C2B524F9D0094DB85 /* SignUpView.swift */,
+				237E135A2B524F9D0094DB85 /* ResetView.swift */,
+				237E135B2B524F9D0094DB85 /* TransitionView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		237E135D2B524F9D0094DB85 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				237E135E2B524F9D0094DB85 /* UserProfile.swift */,
+				237E135F2B524F9D0094DB85 /* FavoriteCoin.swift */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		237E13602B524F9D0094DB85 /* Coin */ = {
+			isa = PBXGroup;
+			children = (
+				237E13612B524F9D0094DB85 /* ViewModel */,
+				237E13642B524F9D0094DB85 /* Model */,
+				237E13672B524F9D0094DB85 /* View */,
+			);
+			path = Coin;
+			sourceTree = "<group>";
+		};
+		237E13612B524F9D0094DB85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				237E13622B524F9D0094DB85 /* CoinManager.swift */,
+				237E13632B524F9D0094DB85 /* CoinDetailManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		237E13642B524F9D0094DB85 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				237E13652B524F9D0094DB85 /* Coin.swift */,
+				237E13662B524F9D0094DB85 /* CoinDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		237E13672B524F9D0094DB85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				237E13682B524F9D0094DB85 /* CoinList.swift */,
+				237E13692B524F9D0094DB85 /* CoinScroll.swift */,
+				237E136A2B524F9D0094DB85 /* CoinRow.swift */,
+				237E136B2B524F9D0094DB85 /* CoinCard.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		237E136C2B524F9D0094DB85 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				237E13712B524F9D0094DB85 /* HomeTabView.swift */,
+				237E13732B524F9D0094DB85 /* MarketView.swift */,
+				237E13742B524F9D0094DB85 /* WatchlistView.swift */,
+				237E13752B524F9D0094DB85 /* PortfolioView.swift */,
+				237E13722B524F9D0094DB85 /* CoinDetailView.swift */,
+				237E136D2B524F9D0094DB85 /* MyHolding.swift */,
+				237E136E2B524F9D0094DB85 /* UserCard.swift */,
+				237E136F2B524F9D0094DB85 /* CoinPriceChart.swift */,
+				237E13702B524F9D0094DB85 /* TradePage.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		237E13992B52517E0094DB85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +307,12 @@
 			dependencies = (
 			);
 			name = CryptoWallet;
+			packageProductDependencies = (
+				237E11B12B5241400094DB85 /* FirebaseAnalytics */,
+				237E11BD2B5241400094DB85 /* FirebaseAuth */,
+				237E11C92B5241400094DB85 /* FirebaseFirestore */,
+				237E139A2B52517E0094DB85 /* FirebaseFirestoreSwift */,
+			);
 			productName = CryptoWallet;
 			productReference = 237E119D2B523EBF0094DB85 /* CryptoWallet.app */;
 			productType = "com.apple.product-type.application";
@@ -103,7 +333,7 @@
 				};
 			};
 			buildConfigurationList = 237E11982B523EBF0094DB85 /* Build configuration list for PBXProject "CryptoWallet" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -111,6 +341,9 @@
 				Base,
 			);
 			mainGroup = 237E11942B523EBF0094DB85;
+			packageReferences = (
+				237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 237E119E2B523EBF0094DB85 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +360,7 @@
 			files = (
 				237E11A82B523EC20094DB85 /* Preview Assets.xcassets in Resources */,
 				237E11A52B523EC20094DB85 /* Assets.xcassets in Resources */,
+				237E11AF2B523F7C0094DB85 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +371,47 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				237E13982B524F9E0094DB85 /* PortfolioView.swift in Sources */,
+				237E137B2B524F9D0094DB85 /* SecondaryButton.swift in Sources */,
+				237E137E2B524F9D0094DB85 /* APIService.swift in Sources */,
+				237E13902B524F9E0094DB85 /* MyHolding.swift in Sources */,
+				237E13782B524F9D0094DB85 /* UserPortfolio.swift in Sources */,
+				237E137A2B524F9D0094DB85 /* PrimaryButton.swift in Sources */,
+				237E13882B524F9E0094DB85 /* CoinManager.swift in Sources */,
+				237E13762B524F9D0094DB85 /* Holding.swift in Sources */,
+				237E12682B5249040094DB85 /* UnderlineTextFieldStyle.swift in Sources */,
+				237E13912B524F9E0094DB85 /* UserCard.swift in Sources */,
+				237E13862B524F9E0094DB85 /* UserProfile.swift in Sources */,
+				237E13772B524F9D0094DB85 /* PortfolioManager.swift in Sources */,
+				237E138D2B524F9E0094DB85 /* CoinScroll.swift in Sources */,
+				237E138A2B524F9E0094DB85 /* Coin.swift in Sources */,
+				237E137F2B524F9D0094DB85 /* Extension.swift in Sources */,
+				237E13952B524F9E0094DB85 /* CoinDetailView.swift in Sources */,
+				237E138F2B524F9E0094DB85 /* CoinCard.swift in Sources */,
+				237E13792B524F9D0094DB85 /* MenuBar.swift in Sources */,
+				237E138C2B524F9E0094DB85 /* CoinList.swift in Sources */,
+				237E126B2B5249040094DB85 /* RoundedOutlineContainer.swift in Sources */,
 				237E11A32B523EBF0094DB85 /* ContentView.swift in Sources */,
+				237E13972B524F9E0094DB85 /* WatchlistView.swift in Sources */,
+				237E13962B524F9E0094DB85 /* MarketView.swift in Sources */,
+				237E13802B524F9D0094DB85 /* FirebaseAuthService.swift in Sources */,
+				237E13832B524F9E0094DB85 /* ResetView.swift in Sources */,
+				237E13872B524F9E0094DB85 /* FavoriteCoin.swift in Sources */,
+				237E13942B524F9E0094DB85 /* HomeTabView.swift in Sources */,
+				237E13812B524F9E0094DB85 /* CoinListOperation.swift in Sources */,
 				237E11A12B523EBF0094DB85 /* CryptoWalletApp.swift in Sources */,
+				237E12692B5249040094DB85 /* RoundedCardStyle.swift in Sources */,
+				237E13892B524F9E0094DB85 /* CoinDetailManager.swift in Sources */,
+				237E138E2B524F9E0094DB85 /* CoinRow.swift in Sources */,
+				237E13852B524F9E0094DB85 /* SignUpView.swift in Sources */,
+				237E137D2B524F9D0094DB85 /* FavoriteButton.swift in Sources */,
+				237E138B2B524F9E0094DB85 /* CoinDetail.swift in Sources */,
+				237E13842B524F9E0094DB85 /* TransitionView.swift in Sources */,
+				237E13822B524F9E0094DB85 /* LoginView.swift in Sources */,
+				237E13922B524F9E0094DB85 /* CoinPriceChart.swift in Sources */,
+				237E137C2B524F9D0094DB85 /* SortSelection.swift in Sources */,
+				237E126A2B5249040094DB85 /* SectionHeaderFontStyle.swift in Sources */,
+				237E13932B524F9E0094DB85 /* TradePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +617,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		237E11B12B5241400094DB85 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		237E11BD2B5241400094DB85 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		237E11C92B5241400094DB85 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		237E139A2B52517E0094DB85 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 237E11B02B5241400094DB85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 237E11952B523EBF0094DB85 /* Project object */;
 }
