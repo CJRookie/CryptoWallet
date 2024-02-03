@@ -51,15 +51,6 @@ extension Double {
         let prefix = self >= 0 ? "+" : ""
         return prefix+self.asPercentWith2Decimals()
     }
-    
-    /// Returns a NumberFormatter object with the number style set to decimal, maximum fraction digits set to 4, and zero symbol set to empty string
-    func decimalFormatterForQuantity() -> NumberFormatter {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        formatter.maximumFractionDigits = 4
-        formatter.zeroSymbol = ""
-        return formatter
-    }
 }
 
 // MARK: String Extension
@@ -96,4 +87,12 @@ extension CaseIterable where Self: Equatable {
     }
 }
 
+/// A NumberFormatter object with the number style set to decimal, maximum fraction digits set to 0, and zero symbol set to empty string
+var hideZeroFormatter: NumberFormatter = {
+    let formatter = NumberFormatter()
+    formatter.numberStyle = .decimal
+    formatter.maximumFractionDigits = 0
+    formatter.zeroSymbol = ""
+    return formatter
+}()
 

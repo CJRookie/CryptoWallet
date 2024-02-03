@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230258D72B6DF60000666734 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 230258D62B6DF60000666734 /* GoogleService-Info.plist */; };
 		237E11A12B523EBF0094DB85 /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E11A02B523EBF0094DB85 /* CryptoWalletApp.swift */; };
 		237E11A32B523EBF0094DB85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 237E11A22B523EBF0094DB85 /* ContentView.swift */; };
 		237E11A52B523EC20094DB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237E11A42B523EC20094DB85 /* Assets.xcassets */; };
 		237E11A82B523EC20094DB85 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 237E11A72B523EC20094DB85 /* Preview Assets.xcassets */; };
-		237E11AF2B523F7C0094DB85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */; };
 		237E11B22B5241400094DB85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11B12B5241400094DB85 /* FirebaseAnalytics */; };
 		237E11BE2B5241400094DB85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11BD2B5241400094DB85 /* FirebaseAuth */; };
 		237E11CA2B5241400094DB85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 237E11C92B5241400094DB85 /* FirebaseFirestore */; };
@@ -58,12 +58,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230258D62B6DF60000666734 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		237E119D2B523EBF0094DB85 /* CryptoWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		237E11A02B523EBF0094DB85 /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		237E11A22B523EBF0094DB85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		237E11A42B523EC20094DB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237E11A72B523EC20094DB85 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		237E125A2B5249040094DB85 /* UnderlineTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextFieldStyle.swift; sourceTree = "<group>"; };
 		237E125B2B5249040094DB85 /* RoundedCardStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCardStyle.swift; sourceTree = "<group>"; };
 		237E125C2B5249040094DB85 /* SectionHeaderFontStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderFontStyle.swift; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				237E13532B524F9D0094DB85 /* Helper */,
 				237E12592B5249040094DB85 /* Style */,
 				237E11A42B523EC20094DB85 /* Assets.xcassets */,
-				237E11AE2B523F7C0094DB85 /* GoogleService-Info.plist */,
+				230258D62B6DF60000666734 /* GoogleService-Info.plist */,
 				237E11A62B523EC20094DB85 /* Preview Content */,
 			);
 			path = CryptoWallet;
@@ -360,7 +360,7 @@
 			files = (
 				237E11A82B523EC20094DB85 /* Preview Assets.xcassets in Resources */,
 				237E11A52B523EC20094DB85 /* Assets.xcassets in Resources */,
-				237E11AF2B523F7C0094DB85 /* GoogleService-Info.plist in Resources */,
+				230258D72B6DF60000666734 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

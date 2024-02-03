@@ -12,7 +12,7 @@ struct TradePage: View {
     @Environment(\.dismiss) private var dismiss
     @Bindable var coinDetailManager: CoinDetailManager
     @State private var trade: Trade = .buy
-    @State private var quantity: Double? = 0
+    @State private var quantity: Double = 0
     @State private var tradeTask: Task<(), Error>?
     @FocusState private var isFocused: Bool
     @State private var showPromptMessage = false
@@ -38,7 +38,7 @@ struct TradePage: View {
         coin.currentPriceDouble
     }
     private var totalPrice: Double {
-        price * (quantity ?? 0)
+        price * quantity
     }
     
     var body: some View {
@@ -60,11 +60,6 @@ struct TradePage: View {
                 confirmButton
             }
             .padding()
-        }
-        .onChange(of: quantity) { _, newValue in
-            if newValue == nil {
-                quantity = 0
-            }
         }
         .onSubmit(executeTradeTask)
         .onDisappear {
@@ -139,17 +134,13 @@ struct TradePage: View {
         HStack {
             Text("Quantity")
             Spacer()
-            TextField("Quantity", value: $quantity, formatter: quantity?.decimalFormatterForQuantity() ?? NumberFormatter())
-                .keyboardType(.decimalPad)
+            TextField("Quantity", value: $quantity, formatter: hideZeroFormatter)
+                .keyboardType(.numberPad)
                 .frame(width: 120, height: 36)
                 .textFieldStyle(.roundedBorder)
                 .focused($isFocused)
             Button {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                    if let value = quantity {
-                        quantity = value + 1
-                    }
-                }
+                quantity += 1
                 reset()
             } label: {
                 Image(systemName: "plus.circle")
@@ -158,11 +149,7 @@ struct TradePage: View {
             Divider()
                 .frame(height: 20)
             Button {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-                    if let value = quantity {
-                        quantity = max(value - 1, 0)
-                    }
-                }
+                quantity = max(quantity - 1, 0)
                 reset()
             } label: {
                 Image(systemName: "minus.circle")
@@ -202,13 +189,13 @@ struct TradePage: View {
         tradeTask = Task {
             switch trade {
             case .buy:
-                await portfolioManager.buyCoin(coin: coin, buyPrice: price, quantity: quantity ?? 0)
+                await portfolioManager.buyCoin(coin: coin, buyPrice: price, quantity: quantity)
             case .sell:
-                await portfolioManager.sellCoin(coin: coin, sellPrice: price, quantity: quantity ?? 0)
+                await portfolioManager.sellCoin(coin: coin, sellPrice: price, quantity: quantity)
             }
             showPromptMessage = true
             isFocused = false
-            quantity = nil
+            quantity = 0
         }
     }
     
